@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.login-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #145dbf;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Задание 2: Стили для меню */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.logo-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo-link:hover {
+    color: #1877f2;
+}
+
+.menu-items {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-items li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.menu-items a:hover {
+    color: #1877f2;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    display: none;
+    border-radius: 4px;
+}
+
+.dropdown-menu li {
+    padding: 5px 20px;
+}
+
+.dropdown-menu a {
+    color: white;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    color: #1877f2;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
